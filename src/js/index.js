@@ -31,3 +31,21 @@
 //     삭제
 //   </button>
 // </li>
+
+const $ = (selector) => document.querySelector(selector);
+
+function App() {
+  // form 태그가 자동으로 전송되는걸 막아준다.
+  $("#espresso-menu-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+  // 메뉴 이름 입력받기
+  $("#espresso-menu-name").addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      const $espressomenuname = $("#espresso-menu-name").value;
+      console.log($("#espresso-menu-name").value);
+    }
+  });
+}
+
+App();
