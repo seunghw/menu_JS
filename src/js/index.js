@@ -39,7 +39,7 @@ function App() {
   $("#espresso-menu-form").addEventListener("submit", (e) => {
     e.preventDefault();
   });
-  // 메뉴 이름 입력받기
+  // 메뉴 이름 입력 받기
   $("#espresso-menu-name").addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
       const $espressomenuname = $("#espresso-menu-name").value;
